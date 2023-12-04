@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 20px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  padding: .5rem .8rem;
+  font-size: 1rem;
+  outline: none;
+  color: #333;
+}
+
+.form {
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+  padding: 40px;
+}
+
+.form_group {
+  display: flex;
+  gap: 20px;
+}
+
+#endereco {
+  flex: 1;
+}
+
+#endereco input {
+  width: 100%;
+}
+
+@media (max-width: 798px){
+  .form_group {
+    flex-direction: column;
+  }
+}
